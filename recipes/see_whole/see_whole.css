@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 80%;
+	height: 100%;
+	border: 1px solid #1C8314;
+	font-family: "Verdana"
+}
+.recipeImg {
+	margin: 10px;
+	width: 30%;
+	height: auto;
+	float: left;
+}
+.headerOfRecipe {
+	font-size: 24px;
+	color: #1C8314;
+	text-align: center;
+	margin: 30px 0; 
+}
+p {
+	padding-left: 10px;
+	font-size: 16px;
+	margin: 20px 0px;
+}
+.homePage {
+	float: right;
+	text-decoration: none;
+	color: #1C8314;
+	padding-right: 30px;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+footer {
+	background-color: #1C8314;
+	height: 110px;
+	text-align: center;
+}
+footer ul {
+	display: block;
+	margin: 0 auto;
+	bottom: 5px;
+}
+footer ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+footer ul li a i{
+	color: #fff;
+	font-size: 35px;
+	padding: 5px 10px;
+}
+footer p {
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px; 
+	color: #fff;
+}

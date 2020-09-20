@@ -1,0 +1,90 @@
+main {
+	background: url(../../images/2219.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#recipeContainer, #readFullRecipe {
+	background-color: rgba(250,250,250,0.6);
+	width: 100%;
+	height: 100%;
+}
+h1 {
+	text-align: center;
+	margin: 10px;
+	padding-top: 20px;
+	color: #1C8314;
+}
+#addRecipe {
+	width: 80%;
+	height: auto;
+	margin: 20px auto 0px auto;
+}
+#name {
+	color: #1C8314;
+	font-size: 16px;
+	border: none;
+	margin: 20px 0px;
+	padding: 10px 0px;
+	width: 100%;
+	text-align: center;
+}
+#name:hover {
+	border-bottom: 2px solid #1C8314;
+	outline: none;
+}
+#imageURL #img{
+	color: #1C8314;
+	font-size: 16px;
+	padding: 10px;
+	margin: 5px 10px 5px 0px;
+	border: none;
+	outline: none;
+}
+#ingredients, #steps {
+	outline: none;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: 1px solid #1C8314;
+	margin-top: 25px;
+}
+#dishType {
+	outline: none;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: 1px solid #1C8314;
+	margin-top: 25px;
+	width: 30%;
+}
+option:hover {
+	background-color: #1C8314;
+}
+option:active {
+	background-color: #1C8314;
+}
+#ingredients:focus, #steps:focus, #dishType:focus {
+	border: 5px solid #1C8314;
+	color: #000;
+}
+#buttons {
+	padding: 20px 0px;
+    width: 100%;
+}
+#buttons input {
+	width: 25%;
+	background-color: #1C8314;
+	padding: 5px 10px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-weight: bolder;
+}
+@media only screen and (max-width: 450px) { 
+	#imgInput {
+		width: 80%;
+	}
+	#buttons input {
+    	width: 45%;
+    }
+}

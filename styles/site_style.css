@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&display=swap');
+main {
+	width: 100%;
+}
+#search {
+	padding: 30px 0 10px 0;
+	width: 100%;
+	height: 25px;
+	position: relative;
+}
+#search #searchRecipe {
+	width: 25%;
+	margin-right: 10px;
+	float: right;
+	border: 2px solid #1C8314;
+	height: 20px;
+}
+#search i {
+	position: absolute;
+	right: 27%;
+}
+.welcomeContainer {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	font-size: 24px;
+	padding: 25px;
+}
+.parallax {
+	background: url("../images/articleWelcome.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 60vh;
+	display: flex;
+	align-items: flex-start;
+	align-content: center;
+}
+.parallax p {
+	width: 40vw;
+    background-color: rgba(0,0, 0, 0.4);
+    color: #fff;
+    border-left: 5px solid #41BA38;
+    margin: 50px 0 0 20px;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 40px;
+}
+#container {
+	display: flex;
+	align-items: flex-start;
+	height: 100%;
+}
+aside {
+	width: 17%;
+    height: 100%;
+    border-right: 2px solid #1C8314;
+    margin-top: 30px;
+}
+aside ul li {
+	line-height: 3;
+	font-size: 18px;
+	padding: 10px;
+	list-style-type: none;
+}
+aside ul li a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: #000;
+}
+aside ul li a img {
+	width: 8%;
+	height: auto;
+	color: #000;
+}
+#recipes {
+	width: 70%;
+    margin: 30px 5% 60px 5%;
+    min-height: 600px;
+}
+.recipe {
+	position: relative;
+	border-bottom: 1px solid #1C8314;
+	margin: 10px 0;
+}
+.recipe:hover img{
+	width: 12%;
+}
+.recipe img {
+	width: 10%;
+	height: auto;
+	margin: 2px;
+	border-radius: 2px;
+}
+.recipe h2 {
+    position: absolute;
+    top: 30%;
+    padding-left: 18%;
+    transform: translate(0%, -50%);
+}
+.recipe p {
+	display: none;
+}
+.buttons {
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+.buttons input {
+	background-color: #FFF;
+	padding: 2px 5px;
+	border: none;
+	border-bottom: 1px solid #B9A493;
+	outline: none;
+	cursor: pointer;
+}
+.buttons input:active{
+	border: none;
+	outline: none;
+}
+.buttons input.delete, input.editRecipe {
+	border: none;
+}
+.editRecipe {
+	font-size: 16px;
+}
+.articleContainer {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+	background-color: #f9f9f9;
+	font-size: 24px;
+	padding: 25px;
+}
+.advice {
+	width: 98%;
+    margin-left: 1%;
+    background: url(../images/2219.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    margin-top: 75px;
+}
+.advice p {
+	width: 35%;
+    float: left;
+    background-color: rgba(0,0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    border-left: 5px solid #41BA38;
+    height: 15vh;
+    margin: 50px 0 0 20px;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 40px;
+}
+.gallery {
+	display: inline-block;
+    width: 100%;
+    padding-bottom: 30px;
+    margin: 70px auto 10px 0%;
+}
+.gallery h2 {
+	text-align: center;
+    padding: 30px 0;
+}
+#foodImages {
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#foodImages .instaGallery {
+	width: 25%;
+	display: inline-block;
+	list-style-type: none;
+}
+.instaGallery div {
+	position: absolute;
+    z-index: 1;
+    width: 25%;
+    background-color: rgba(65,186,56, 0.6);
+    font-weight: bolder;
+    text-align: center;
+    padding: 7.5% 0;
+    transform: translate(0%, -50%);
+    margin-top: 8.5%;
+    display: none;
+}
+.instaGallery div i {
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.instaGallery:hover div{
+	display: block;
+}
+.instaGallery img {
+	width: 100%;
+}
+a.next, a.prev{
+	display: none;
+}
+@media only screen and (max-width: 1500px) {
+ 	.advice p {
+    	font-size: 23px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+	#search #searchRecipe {
+	    width: 50%;
+ 	}
+ 	#search i {
+ 		left: 45%;
+ 	}
+ 	aside ul li a img {
+    	width: 15%;
+	}
+	aside {
+    	width: 24%;
+	}
+	aside ul li {
+    	font-size: 16px;
+	}
+}
+@media only screen and (max-width: 900px) {
+ 	aside {
+    	width: 24%;
+	}
+ 	aside ul li {
+	    font-size: 18px;
+	    text-align: center;
+	}
+	aside ul li a img {
+	    width: 20%;
+	    display: block;
+	    margin: auto;
+	}
+    .recipe img {
+    	width: 18%;
+	}
+	.recipe:hover img{
+		width: 18%;
+	}
+	.recipe h2 {
+    	padding-left: 21%;
+    	font-size: 22px;
+	}
+	.advice p {
+    	font-size: 20px;
+	}
+
+}
+@media only screen and (max-width: 700px) {
+	.parallax p {
+		width: 55vw;
+	    padding: 35px;
+	}
+	#search #searchRecipe {
+	    width: 60%;
+	    margin-right: 5px;
+ 	}
+ 	#search i {
+ 		left: 34%;
+ 		right: 0%;
+ 	}
+ 	aside {
+    	width: 22%;
+	}
+ 	aside ul li {
+	    font-size: 16px;
+	}
+	aside ul li a img {
+	    width: 30%;
+	}
+		.recipe {
+		height: auto;
+	}
+    .recipe img {
+    	width: 20%;
+	}
+	.recipe:hover img{
+		width: 20%;
+	}
+	.instaGallery div {
+	    width: 25%;
+        padding: 6.1% 0;
+        margin-top: 8.5%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.parallax p {
+	    font-size: 1em;
+	}
+	#search #searchRecipe {
+	    width: 90%;
+	    margin-right: 5px;
+ 	}
+ 	#search i {
+ 		left: 1%;
+ 		right: 0%;
+ 	}
+ 	aside {
+		display: none;
+ 	}
+ 	#recipes {
+	    display: block;
+	    width: 75%;
+	    margin: 30px auto;
+	}
+	.recipe {
+		height: 270px;
+	}
+	.recipe img {
+		display: block;
+	    margin: 0 auto;
+	    width: 50%;
+    }
+    .recipe:hover img {
+    	width: 50%;
+    }
+    .recipe h2 {
+		text-align: center;
+		top: 0%;
+		padding-left: 0%;
+		transform: translate(0%, 0%);
+		position: inherit;
+		font-size: 16px;
+		padding: 5px 0px;
+	}
+	.buttons {
+		position: absolute;
+	    right: 5px;
+	    bottom: 25px;
+	}
+	.advice p {
+    	width: 62%;
+    	font-size: 16px;
+	}
+	.gallery {
+	    margin: 50px auto 10px 0%;
+	}
+	#slider {
+		position: relative;
+		overflow: hidden;
+		margin: 20px auto 0 auto;
+		border-radius: 4px;
+	    width: 100%;
+    	height: 300px;
+	}
+
+	#slider ul {
+	  position: relative;
+	  margin: 0;
+	  padding: 0;
+	  height: 200px;  list-style: none;
+	}
+
+	#slider #foodImages .instaGallery {
+	    position: relative;
+	    display: block;
+	    float: left;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	    height: 300px;
+	    background: #ccc;
+	    text-align: center;
+	    line-height: 300px;
+	}
+
+	a.prev, a.next {
+	  position: absolute;
+	  top: 40%;
+	  z-index: 999;
+	  display: block;
+	  padding: 4% 3%;
+	  width: auto;
+	  height: auto;
+	  background: #2a2a2a;
+	  color: #fff;
+	  text-decoration: none;
+	  font-weight: 600;
+	  font-size: 18px;
+	  opacity: 0.8;
+	  cursor: pointer;
+	}
+
+	a.prev:hover, a.next:hover {
+	  opacity: 1;
+	  -webkit-transition: all 0.2s ease;
+	}
+}
+a.prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
